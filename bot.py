@@ -79,7 +79,11 @@ async def pica(interaction: discord.Interaction):
 
 @bot.tree.command(name="turtle", description="Gets a random picture of a turtle.")
 async def picb(interaction: discord.Interaction):
-    await send_random_image_from_folder(interaction, SUBFOLDER_ID_TURTLES)
+    await send_random_image_from_folder(interaction, SUBFOLDER_ID_TURTLES)\
+
+@bot.tree.command(name="wisdom", description="Get IQ by reading ts...")
+async def picc(interaction: discord.Interaction):
+    await send_random_image_from_folder(interaction, SUBFOLDER_ID_WISDOM)
 
 @bot.tree.command(name="ping", description="Measures the bot's connection latency.")
 async def ping(interaction: discord.Interaction):
